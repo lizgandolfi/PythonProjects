@@ -1,2 +1,2 @@
 # PythonProjects
-Some Python projects I have worked on
+💻	Some Python projects I have worked on!
