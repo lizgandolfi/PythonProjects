@@ -26,4 +26,3 @@ print('Draw 6:', draw6)
 print('Average:', avg)
 
 
-
