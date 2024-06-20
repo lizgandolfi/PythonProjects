@@ -1,0 +1,41 @@
+weight = 55
+
+#ground shipping
+if weight <= 2:
+  cost_ground = weight*1.50+20
+  print("Ground Shipping Cost: $", cost_ground)
+elif 2 <= weight <= 6:
+  cost_ground = weight*3+20
+  print("Ground Shipping Cost: $", cost_ground)
+elif 6 <= weight <= 10:
+  cost_ground = weight*4+20
+  print("Ground Shipping Cost: $", cost_ground)
+elif weight >= 10:
+  cost_ground = weight*4.75+20
+  print("Ground Shipping Cost: $", cost_ground)
+
+#premium shipping
+ground_shipping_premium = 125.00
+print("Premium Shipping Cost: $", ground_shipping_premium)
+
+#drone shipping
+if weight <= 2:
+  cost_drone = weight*4.50
+  print("Drone Shipping Cost: $", cost_drone)
+elif 2 <= weight <= 6:
+  cost_drone = weight*9
+  print("Drone Shipping Cost: $", cost_drone)
+elif 6 <= weight <= 10:
+  cost_drone = weight*12
+  print("Drone Shipping Cost: $", cost_drone)
+elif weight >= 10:
+  cost_drone = weight*14.25
+  print("Drone Shipping Cost: $", cost_drone)
+
+#best option
+if cost_ground < ground_shipping_premium and cost_ground < cost_drone:
+  print("It looks like Ground Shipping might be your best option!")
+elif cost_drone < ground_shipping_premium and cost_drone < cost_ground:
+  print("It looks like Drone Shipping might be your best option!")
+else:
+  print("It looks like Premium Shipping might be your best option!")
